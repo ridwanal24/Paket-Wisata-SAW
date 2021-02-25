@@ -229,6 +229,9 @@
                 {
                   include 'pembatalan.php';
                 }
+                elseif ($_GET['page']=="rekomendasipaket"){
+                  include 'rekomendasipaket.php';
+                }
               }
               else
               {
