@@ -97,6 +97,22 @@
         </div>
       </li>
 
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Recommendation Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#rec-col" aria-expanded="true" aria-controls="collapsePages">
+        <i class="fas fa-money-check-alt mr-2"></i>Rekomendasi</a>
+        <div id="rec-col" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white collapse-inner rounded">
+            <a class="collapse-item" href="index.php?page=rekomendasikriteria">Bobot Kriteria</a>
+            <a class="collapse-item" href="index.php?page=rekomendasivariabel">Bobot Variabel</a>
+            <a class="collapse-item" href="index.php?page=rekomendasialternatif">Alternatif</a>
+          </div>
+        </div>
+      </li>
+
       <!-- Nav Item - Charts -->
        <hr class="sidebar-divider my-0">
       <li class="nav-item">
@@ -229,8 +245,15 @@
                 {
                   include 'pembatalan.php';
                 }
-                elseif ($_GET['page']=="rekomendasipaket"){
-                  include 'rekomendasipaket.php';
+                // rekomendasi
+                elseif ($_GET['page']=="rekomendasivariabel"){
+                  include 'rekomendasipaketvariabel.php';
+                }
+                elseif ($_GET['page']=="rekomendasikriteria"){
+                  include 'rekomendasipaketkriteria.php';
+                }
+                elseif ($_GET['page']=="rekomendasialternatif"){
+                  include 'rekomendasipaketalternatif.php';
                 }
               }
               else
