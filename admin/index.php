@@ -247,13 +247,22 @@
                 }
                 // rekomendasi
                 elseif ($_GET['page']=="rekomendasivariabel"){
-                  include 'rekomendasipaketvariabel.php';
+                  include 'rekomendasivariabel.php';
                 }
                 elseif ($_GET['page']=="rekomendasikriteria"){
-                  include 'rekomendasipaketkriteria.php';
+                  include 'rekomendasikriteria.php';
                 }
                 elseif ($_GET['page']=="rekomendasialternatif"){
-                  include 'rekomendasipaketalternatif.php';
+                  include 'rekomendasialternatif.php';
+                }
+                elseif ($_GET['page']=="kriteriaedit"){
+                  include 'rekomendasikriteria_edit.php';
+                }
+                elseif ($_GET['page']=="variabeltambah"){
+                  include 'rekomendasivariabel_tambah.php';
+                }
+                elseif ($_GET['page']=="variabelhapus"){
+                  include 'rekomendasivariabel_hapus.php';
                 }
               }
               else
@@ -300,6 +309,9 @@
 
   <!-- Page level custom scripts -->
   <script src="js/demo/datatables-demo.js"></script>
+
+  <!-- User script -->
+  <script src="js/script.js"></script>
 
 </body>
 
