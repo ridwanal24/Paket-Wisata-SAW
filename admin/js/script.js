@@ -2,7 +2,7 @@
 
 // HAPUS REKOMENDASI VARIABEL //
 $('.btn-hapus').click(function(){
-    if(confirm('Yakin mau menghapus?')){
+    if(confirm('Data akan dihapus?')){
         location.href = "index.php?page=variabelhapus&id=" + this.getAttribute('value');
     }
 });
@@ -11,13 +11,6 @@ $('.btn-hapus').click(function(){
 $('select[name=paketwisata]').change(function(){
     if(this.getAttribute("value") != "null"){
         $.ajax({
-            xhr: function(){
-                let xhr = new window.XMLHttpRequest();
-                xhr.addEventListener('progress',function(){
-                    console.log('download');
-                },false);
-                return xhr;
-            },
             method:'get',
             data:{
                 id: $('select[name=paketwisata]').val()

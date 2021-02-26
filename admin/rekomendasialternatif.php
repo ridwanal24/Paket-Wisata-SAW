@@ -1,4 +1,4 @@
-<a href="" class="btn btn-primary" target="_blank"><i class="fas fa-plus"></i>  Tambah Alternatif</a><br><br>
+<a href="index.php?page=alternatiftambah" class="btn btn-primary"><i class="fas fa-plus"></i>  Tambah Alternatif</a><br><br>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Rekomendasi Alternatif</h6>
@@ -34,7 +34,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					
+
 				</tbody>
 			</table>
 		</div>

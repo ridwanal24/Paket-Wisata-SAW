@@ -267,6 +267,9 @@
                 elseif ($_GET['page']=="variabeledit"){
                   include 'rekomendasivariabel_edit.php';
                 }
+                elseif ($_GET['page']=="alternatiftambah"){
+                  include 'rekomendasialternatif_tambah.php';
+                }
               }
               else
               {
