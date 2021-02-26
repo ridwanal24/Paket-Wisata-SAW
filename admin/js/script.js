@@ -7,7 +7,7 @@ $('.btn-hapus').click(function(){
     }
 });
 
-// TAMPILKAN REKOMENDASI ALTERNATIF
+// TAMPILKAN REKOMENDASI ALTERNATIF //
 $('select[name=paketwisata]').change(function(){
     if(this.getAttribute("value") != "null"){
         $.ajax({
@@ -26,7 +26,6 @@ $('select[name=paketwisata]').change(function(){
                                 <td>${item['nama_paketwisata']}</td>
                                 <td>${item['kriteria']}</td>
                                 <td>${item['variabel']}</td>
-                                <td></td>
                             </tr>`
                     i += 1;
                 });
@@ -34,5 +33,12 @@ $('select[name=paketwisata]').change(function(){
                 $('.table-alternatif').DataTable();
             }
         })
+    }
+});
+
+// UBAH ALTERNATIF //
+$('select[name=id_paketwisata_edit]').change(function(){
+    if(this.value != "null"){
+        location.href = 'index.php?page=alternatifubah&id=' + this.value;
     }
 });

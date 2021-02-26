@@ -270,6 +270,9 @@
                 elseif ($_GET['page']=="alternatiftambah"){
                   include 'rekomendasialternatif_tambah.php';
                 }
+                elseif ($_GET['page']=="alternatifubah"){
+                  include 'rekomendasialternatif_edit.php';
+                }
               }
               else
               {
