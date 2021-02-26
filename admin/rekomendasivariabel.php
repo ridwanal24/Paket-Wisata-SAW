@@ -26,7 +26,7 @@
 						<td><?php echo $pecah['nilai']; ?></td>
 						<td>
                             <a class="btn btn-danger btn-hapus" href="#" value="<?php echo $pecah['id_variabel']; ?>"><i class="fa fa-trash"></i></a>
-                            <a class="btn btn-warning" href=""><i class="fa fa-pen"></i></a>
+                            <a class="btn btn-warning" href="index.php?page=variabeledit&id=<?php echo $pecah['id_variabel']; ?>"><i class="fa fa-pen"></i></a>
                         </td>
 					</tr>
 						<?php $nomor++; ?>

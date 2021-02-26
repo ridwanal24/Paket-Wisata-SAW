@@ -245,7 +245,7 @@
                 {
                   include 'pembatalan.php';
                 }
-                // rekomendasi
+                // ============ REKOMENDASI ============ //
                 elseif ($_GET['page']=="rekomendasivariabel"){
                   include 'rekomendasivariabel.php';
                 }
@@ -263,6 +263,9 @@
                 }
                 elseif ($_GET['page']=="variabelhapus"){
                   include 'rekomendasivariabel_hapus.php';
+                }
+                elseif ($_GET['page']=="variabeledit"){
+                  include 'rekomendasivariabel_edit.php';
                 }
               }
               else
