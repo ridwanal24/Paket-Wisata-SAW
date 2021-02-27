@@ -106,7 +106,6 @@
         <i class="fas fa-money-check-alt mr-2"></i>Rekomendasi</a>
         <div id="rec-col" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white collapse-inner rounded">
-            <a class="collapse-item" href="index.php?page=rekomendasikriteria">Bobot Kriteria</a>
             <a class="collapse-item" href="index.php?page=rekomendasivariabel">Bobot Variabel</a>
             <a class="collapse-item" href="index.php?page=rekomendasialternatif">Alternatif</a>
           </div>
@@ -249,14 +248,8 @@
                 elseif ($_GET['page']=="rekomendasivariabel"){
                   include 'rekomendasivariabel.php';
                 }
-                elseif ($_GET['page']=="rekomendasikriteria"){
-                  include 'rekomendasikriteria.php';
-                }
                 elseif ($_GET['page']=="rekomendasialternatif"){
                   include 'rekomendasialternatif.php';
-                }
-                elseif ($_GET['page']=="kriteriaedit"){
-                  include 'rekomendasikriteria_edit.php';
                 }
                 elseif ($_GET['page']=="variabeltambah"){
                   include 'rekomendasivariabel_tambah.php';
