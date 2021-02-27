@@ -266,6 +266,9 @@
                 elseif ($_GET['page']=="alternatifubah"){
                   include 'rekomendasialternatif_edit.php';
                 }
+                elseif ($_GET['page']=="alternatifhapus"){
+                  include 'rekomendasialternatif_hapus.php';
+                }
               }
               else
               {

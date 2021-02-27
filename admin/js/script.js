@@ -1,13 +1,15 @@
 // ========== CUSTOM SCRIPT ========== //
 
-// HAPUS REKOMENDASI VARIABEL //
+// ---- REKOMENDASI ---- //
+
+// HAPUS VARIABEL //
 $('.btn-hapus').click(function(){
     if(confirm('Data akan dihapus?')){
         location.href = "index.php?page=variabelhapus&id=" + this.getAttribute('value');
     }
 });
 
-// TAMPILKAN REKOMENDASI ALTERNATIF //
+// TAMPILKAN ALTERNATIF //
 $('select[name=paketwisata]').change(function(){
     if(this.getAttribute("value") != "null"){
         $.ajax({
@@ -42,3 +44,14 @@ $('select[name=id_paketwisata_edit]').change(function(){
         location.href = 'index.php?page=alternatifubah&id=' + this.value;
     }
 });
+
+// HAPUS ALTERNATIF //
+$('.btn-hapus-alternatif').click(function(){
+    if($('select[name=paketwisata]').val() != "null"){
+        if(confirm('Data akan dihapus?')){
+            location.href = "index.php?page=alternatifhapus&id=" + $('select[name=paketwisata]').val();
+        }
+    }
+});
+
+// ---- AKHIR REKOMENDASI ---- //
